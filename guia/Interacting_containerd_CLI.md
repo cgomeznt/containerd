@@ -22,8 +22,8 @@ Example (`nerdctl`):
 nerdctl run --name redis redis:alpine
 
 
-For crictl is required repo Kube and install cri-tools::
-
+For crictl is required repo Kube and install cri-tools:
+```bash
   # cat <<\EOF > /etc/yum.repos.d/kubernetes.repo
   [kubernetes]
   name=Kubernetes
@@ -35,3 +35,4 @@ For crictl is required repo Kube and install cri-tools::
   EOF
   
   # dnf install -y cri-tools  --disableexcludes=kubernetes
+...
