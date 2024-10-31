@@ -22,6 +22,7 @@ Example (`nerdctl`):
 nerdctl run --name redis redis:alpine
 ...
 
+
 For crictl is required repo Kube and install cri-tools:
 ```bash
   # cat <<\EOF > /etc/yum.repos.d/kubernetes.repo
@@ -33,6 +34,5 @@ For crictl is required repo Kube and install cri-tools:
   gpgkey=https://pkgs.k8s.io/core:/stable:/v1.30/rpm/repodata/repomd.xml.key
   exclude=kubelet kubeadm kubectl cri-tools kubernetes-cni
   EOF
-  
   # dnf install -y cri-tools  --disableexcludes=kubernetes
 ...
