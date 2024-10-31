@@ -26,30 +26,57 @@ options, and operations are not guaranteed to be backward compatible or stable f
 
 COMMANDS:
    plugins, plugin            Provides information about containerd plugins
+
    version                    Print the client and server versions
+
    containers, c, container   Manage containers
+
    content                    Manage content
+
    events, event              Display containerd events
+
    images, image, i           Manage images
+
    leases                     Manage leases
+
    namespaces, namespace, ns  Manage namespaces
+
    pprof                      Provide golang pprof outputs for containerd
+
    run                        Run a container
+
    snapshots, snapshot        Manage snapshots
+
    tasks, t, task             Manage tasks
+
    install                    Install a new package
+
    oci                        OCI tools
+
    sandboxes, sandbox, sb, s  Manage sandboxes
+
    info                       Print the server info
+
    deprecations
+
    shim                       Interact with a shim directly
+
    help, h                    Shows a list of commands or help for one command
 
 GLOBAL OPTIONS:
+
    --debug                      Enable debug output in logs
-   --address value, -a value    Address for containerd's GRPC server (default: "/run/containerd/containerd.sock") [$CONTAINERD_ADDRESS]
+
+   --address value, -a value    Address for containerd's GRPC server (default: "/run/containerd/containerd.sock") 
+
+[$CONTAINERD_ADDRESS]
+
    --timeout value              Total timeout for ctr commands (default: 0s)
+
    --connect-timeout value      Timeout for connecting to containerd (default: 0s)
+
    --namespace value, -n value  Namespace to use with commands (default: "default") [$CONTAINERD_NAMESPACE]
+
    --help, -h                   show help
+
    --version, -v                print the version
