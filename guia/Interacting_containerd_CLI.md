@@ -20,7 +20,7 @@ ctr run docker.io/library/redis:alpine redis
 Example (`nerdctl`):
 ```bash
 nerdctl run --name redis redis:alpine
-
+...
 
 For crictl is required repo Kube and install cri-tools:
 ```bash
